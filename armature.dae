@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.64.0 r51232</authoring_tool>
+    </contributor>
+    <created>2012-11-04T19:18:43</created>
+    <modified>2012-11-04T19:18:43</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras>
+    <camera id="Camera-camera" name="Camera">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">49.13434</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">100</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+    </camera>
+  </library_cameras>
+  <library_lights>
+    <light id="Lamp-light" name="Lamp">
+      <technique_common>
+        <point>
+          <color sid="color">1 1 1</color>
+          <constant_attenuation>1</constant_attenuation>
+          <linear_attenuation>0</linear_attenuation>
+          <quadratic_attenuation>0.00111109</quadratic_attenuation>
+        </point>
+      </technique_common>
+      <extra>
+        <technique profile="blender">
+          <adapt_thresh>0.000999987</adapt_thresh>
+          <area_shape>0</area_shape>
+          <area_size>1</area_size>
+          <area_sizey>1</area_sizey>
+          <area_sizez>1</area_sizez>
+          <atm_distance_factor>1</atm_distance_factor>
+          <atm_extinction_factor>1</atm_extinction_factor>
+          <atm_turbidity>2</atm_turbidity>
+          <att1>0</att1>
+          <att2>1</att2>
+          <backscattered_light>1</backscattered_light>
+          <bias>1</bias>
+          <blue>1</blue>
+          <buffers>1</buffers>
+          <bufflag>0</bufflag>
+          <bufsize>2880</bufsize>
+          <buftype>2</buftype>
+          <clipend>30.002</clipend>
+          <clipsta>1.000799</clipsta>
+          <compressthresh>0.04999995</compressthresh>
+          <dist sid="blender_dist">29.99998</dist>
+          <energy sid="blender_energy">1</energy>
+          <falloff_type>2</falloff_type>
+          <filtertype>0</filtertype>
+          <flag>0</flag>
+          <gamma sid="blender_gamma">1</gamma>
+          <green>1</green>
+          <halo_intensity sid="blnder_halo_intensity">1</halo_intensity>
+          <horizon_brightness>1</horizon_brightness>
+          <mode>8192</mode>
+          <ray_samp>1</ray_samp>
+          <ray_samp_method>1</ray_samp_method>
+          <ray_samp_type>0</ray_samp_type>
+          <ray_sampy>1</ray_sampy>
+          <ray_sampz>1</ray_sampz>
+          <red>1</red>
+          <samp>3</samp>
+          <shadhalostep>0</shadhalostep>
+          <shadow_b sid="blender_shadow_b">0</shadow_b>
+          <shadow_g sid="blender_shadow_g">0</shadow_g>
+          <shadow_r sid="blender_shadow_r">0</shadow_r>
+          <shadspotsize>45</shadspotsize>
+          <sky_colorspace>0</sky_colorspace>
+          <sky_exposure>1</sky_exposure>
+          <skyblendfac>1</skyblendfac>
+          <skyblendtype>1</skyblendtype>
+          <soft>3</soft>
+          <spotblend>0.15</spotblend>
+          <spotsize>75</spotsize>
+          <spread>1</spread>
+          <sun_brightness>1</sun_brightness>
+          <sun_effect_type>0</sun_effect_type>
+          <sun_intensity>1</sun_intensity>
+          <sun_size>1</sun_size>
+          <type>0</type>
+        </technique>
+      </extra>
+    </light>
+  </library_lights>
+  <library_images/>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Camera" name="Camera" type="NODE">
+        <translate sid="location">7.481132 -6.50764 5.343665</translate>
+        <rotate sid="rotationZ">0 0 1 46.69194</rotate>
+        <rotate sid="rotationY">0 1 0 0.619768</rotate>
+        <rotate sid="rotationX">1 0 0 63.5593</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_camera url="#Camera-camera"/>
+      </node>
+      <node id="Lamp" name="Lamp" type="NODE">
+        <translate sid="location">4.076245 1.005454 5.903862</translate>
+        <rotate sid="rotationZ">0 0 1 106.9363</rotate>
+        <rotate sid="rotationY">0 1 0 3.163707</rotate>
+        <rotate sid="rotationX">1 0 0 37.26105</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_light url="#Lamp-light"/>
+      </node>
+      <node id="Armature" name="Armature" type="NODE">
+        <translate sid="location">0 0 0</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <node id="A1" name="A1" sid="A1" type="JOINT">
+          <matrix sid="transform">7.54979e-8 1 0 0 -7.54979e-8 5.69993e-15 -1 0 -1 7.54979e-8 7.54979e-8 0 0 0 0 1</matrix>
+          <node id="Bone" name="Bone" sid="Bone" type="JOINT">
+            <matrix sid="transform">-1 0 0 -3.01992e-7 0 -1 0 0 0 0 1 0 0 0 0 1</matrix>
+            <node id="B2" name="B2" sid="B2" type="JOINT">
+              <matrix sid="transform">7.54979e-8 -7.54979e-8 1 0 -7.54979e-8 1 7.54979e-8 4 -1 -7.54979e-8 7.54979e-8 0 0 0 0 1</matrix>
+              <node id="B3" name="B3" sid="B3" type="JOINT">
+                <matrix sid="transform">1 0 1.13999e-14 0 0 1 0 3 -1.13999e-14 0 1 0 0 0 0 1</matrix>
+                <node id="B4" name="B4" sid="B4" type="JOINT">
+                  <matrix sid="transform">1 0 0 0 0 1 0 3 0 0 1 0 0 0 0 1</matrix>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node id="A2" name="A2" sid="A2" type="JOINT">
+            <matrix sid="transform">7.54979e-8 7.54979e-8 -1 0 7.54979e-8 1 7.54979e-8 4 1 -7.54979e-8 7.54979e-8 0 0 0 0 1</matrix>
+            <node id="A3" name="A3" sid="A3" type="JOINT">
+              <matrix sid="transform">1 0 0 2.84217e-14 0 1 0 3 0 1.40549e-15 1 0 0 0 0 1</matrix>
+              <node id="jaw_up" name="jaw_up" sid="jaw_up" type="JOINT">
+                <matrix sid="transform">0.9178571 1.19209e-7 -0.3969111 0 -0.1575385 0.9178571 -0.3643076 2 0.3643076 0.3969111 0.8424616 2.84217e-14 0 0 0 1</matrix>
+              </node>
+              <node id="jaw_down" name="jaw_down" sid="jaw_down" type="JOINT">
+                <matrix sid="transform">0.9701425 3.72529e-8 0.2425356 0 -0.05882355 0.9701425 0.2352941 2 -0.2352941 -0.2425356 0.9411765 2.84217e-14 0 0 0 1</matrix>
+              </node>
+            </node>
+          </node>
+          <node id="D1" name="D1" sid="D1" type="JOINT">
+            <matrix sid="transform">-0.6710411 -0.7414201 8.33174e-8 -2.72744 0.7414201 -0.6710411 5.74386e-8 -1.042845 1.33233e-8 1.00317e-7 1 5.72372e-7 0 0 0 1</matrix>
+            <node id="D2" name="D2" sid="D2" type="JOINT">
+              <matrix sid="transform">-0.3818948 -0.3953109 0.8353957 -1.19209e-7 -0.1643542 0.9185473 0.3595252 2.430724 -0.9094748 -4.46512e-8 -0.4157594 0 0 0 0 1</matrix>
+            </node>
+          </node>
+          <node id="FinL1" name="FinL1" sid="FinL1" type="JOINT">
+            <matrix sid="transform">0.978312 -0.01269106 -0.2067481 -2.72744 0.1958389 0.3818121 0.9032534 -0.01497555 0.06747568 -0.924153 0.3760167 -2.429508 0 0 0 1</matrix>
+            <node id="FinL2" name="FinL2" sid="FinL2" type="JOINT">
+              <matrix sid="transform">0.1181923 0.1701072 -0.9783116 -2.38419e-7 -0.7854844 0.6187513 0.01269098 1.439446 0.6074904 0.7669488 0.2067481 5.96046e-8 0 0 0 1</matrix>
+            </node>
+          </node>
+          <node id="FinR1" name="FinR1" sid="FinR1" type="JOINT">
+            <matrix sid="transform">0.9879011 -0.01210052 -0.1546128 -2.72744 -0.1314004 0.4642241 -0.8759167 -0.01497555 0.08237404 0.8856352 0.4570175 2.460448 0 0 0 1</matrix>
+            <node id="FinR2" name="FinR2" sid="FinR2" type="JOINT">
+              <matrix sid="transform">0.1105822 -0.1087343 -0.9879009 -2.38419e-7 0.7539484 0.6568223 0.01210059 1.509696 0.6475598 -0.7461644 0.1546128 3.57628e-7 0 0 0 1</matrix>
+            </node>
+          </node>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
